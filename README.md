@@ -17,7 +17,7 @@ const journal = require("general-journal")
 
 ### For sales
 ## journal.cashSales(
-	[dades, codes, amount-tax-free, doc-id], 
+	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
@@ -34,7 +34,7 @@ journal.cashSales(
 	]
 ```
 ## journal.cashSales(
-	[dades, codes, amount-tax-free, doc-id]
+	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
 journal.cashSales(
@@ -49,7 +49,7 @@ journal.cashSales(
 ```
 
 ## journal.salesOnCredit(
-	[dades, codes, amount-tax-free, doc-id], 
+	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
@@ -63,7 +63,7 @@ journal.salesOnCredit(["05/09/2022","701",50000,"001A00AB"],18) //=>
 	]
 ```
 ## journal.salesOnCredit(
-	[dades, codes, amount-tax-free, doc-id]
+	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
 journal.salesOnCredit(
@@ -78,7 +78,7 @@ journal.salesOnCredit(
 ```
 
 ## journal.salesByBankTransfer(
-	[dades, codes, amount-tax-free, doc-id], 
+	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
@@ -95,7 +95,7 @@ journal.salesByBankTransfer(
 	]
 ```
 ## journal.salesByBankTransfer(
-	[dades, codes, amount-tax-free, doc-id]
+	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
 journal.salesByBankTransfer(
@@ -112,7 +112,7 @@ journal.salesByBankTransfer(
 ### For purchase jounal
 
 ## journal.cashPurchase(
-	[dades, codes, amount-tax-free, doc-id], 
+	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
@@ -129,7 +129,7 @@ journal.cashPurchase(
 	]
 ```
 ## journal.cashPurchase(
-	[dades, codes, amount-tax-free, doc-id]
+	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
 journal.cashPurchase(
@@ -144,7 +144,7 @@ journal.cashPurchase(
 ```
 
 ## journal.purchaseOnCredit(
-	[dades, codes, amount-tax-free, doc-id], 
+	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
@@ -161,7 +161,7 @@ journal.purchaseOnCredit(
 	]
 ```
 ## journal.purchaseOnCredit(
-		[dades, codes, amount-tax-free, doc-id]
+		[dates, codes, amount-tax-free, doc-id]
 	)
 ```js
 journal.purchaseOnCredit(
@@ -176,7 +176,7 @@ journal.purchaseOnCredit(
 ```
 
 ## journal.purchaseByBankTransfer(
-	[dades, codes, amount-tax-free, doc-id], 
+	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
@@ -193,7 +193,7 @@ journal.purchaseByBankTransfer(
 	]
 ```
 ## journal.purchaseByBankTransfer(
-	[dades, codes, amount-tax-free, doc-id]
+	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
 journal.purchaseByBankTransfer(
