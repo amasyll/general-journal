@@ -7,12 +7,12 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install journal
+$ npm install general-journal
 ```
 
 ### API
 ```js
-const journal = require("journal")
+const journal = require("general-journal")
 ```
 
 ### For sales
@@ -48,12 +48,12 @@ journal.cashSales(
 	]
 ```
 
-## journal.salesOncredit(
+## journal.salesOnCredit(
 	[dades, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
 ```js
-journal.salesOncredit(["05/09/2022","701",50000,"001A00AB"],18) //=>
+journal.salesOnCredit(["05/09/2022","701",50000,"001A00AB"],18) //=>
 	[
 		"05/09/2022",
 		"Suivant la facture N°001A00AB",
@@ -62,12 +62,11 @@ journal.salesOncredit(["05/09/2022","701",50000,"001A00AB"],18) //=>
 		{codes: "411", credit: 59000}
 	]
 ```
-## journal.salesOncredit(
-	[dades, codes, amount-tax-free, 
-	doc-id]
+## journal.salesOnCredit(
+	[dades, codes, amount-tax-free, doc-id]
 )
 ```js
-journal.salesOncredit(
+journal.salesOnCredit(
 	["05/09/2022","701",50000,"001A00AB"]
 )//=>
 	[
