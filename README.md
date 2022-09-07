@@ -1,4 +1,4 @@
-### General accounting journal
+## General accounting journal
 
 ## Installation
 
@@ -15,8 +15,8 @@ $ npm install general-journal
 const journal = require("general-journal")
 ```
 
-### For sales
-## journal.cashSales(
+## For sales
+#### journal.cashSales(
 	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
@@ -33,7 +33,7 @@ journal.cashSales(
 		{codes: "57", credit: 59000}
 	]
 ```
-## journal.cashSales(
+#### journal.cashSales(
 	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
@@ -48,7 +48,7 @@ journal.cashSales(
 	]
 ```
 
-## journal.salesOnCredit(
+#### journal.salesOnCredit(
 	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
@@ -62,7 +62,7 @@ journal.salesOnCredit(["05/09/2022","701",50000,"001A00AB"],18) //=>
 		{codes: "411", credit: 59000}
 	]
 ```
-## journal.salesOnCredit(
+#### journal.salesOnCredit(
 	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
@@ -77,7 +77,7 @@ journal.salesOnCredit(
 	]
 ```
 
-## journal.salesByBankTransfer(
+#### journal.salesByBankTransfer(
 	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
@@ -94,7 +94,7 @@ journal.salesByBankTransfer(
 		{codes: "52", credit: 59000}
 	]
 ```
-## journal.salesByBankTransfer(
+#### journal.salesByBankTransfer(
 	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
@@ -111,7 +111,7 @@ journal.salesByBankTransfer(
 
 ### For purchase jounal
 
-## journal.cashPurchase(
+#### journal.cashPurchase(
 	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
@@ -128,7 +128,7 @@ journal.cashPurchase(
 		{codes: "57", credit: 59000}
 	]
 ```
-## journal.cashPurchase(
+#### journal.cashPurchase(
 	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
@@ -143,7 +143,7 @@ journal.cashPurchase(
 	]
 ```
 
-## journal.purchaseOnCredit(
+#### journal.purchaseOnCredit(
 	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
@@ -160,7 +160,7 @@ journal.purchaseOnCredit(
 		{codes: "40", credit: 59000}
 	]
 ```
-## journal.purchaseOnCredit(
+#### journal.purchaseOnCredit(
 		[dates, codes, amount-tax-free, doc-id]
 	)
 ```js
@@ -175,7 +175,7 @@ journal.purchaseOnCredit(
 	]
 ```
 
-## journal.purchaseByBankTransfer(
+#### journal.purchaseByBankTransfer(
 	[dates, codes, amount-tax-free, doc-id], 
 	vat-rate
 )
@@ -192,7 +192,7 @@ journal.purchaseByBankTransfer(
 		{codes: "52", debit: 59000}
 	]
 ```
-## journal.purchaseByBankTransfer(
+#### journal.purchaseByBankTransfer(
 	[dates, codes, amount-tax-free, doc-id]
 )
 ```js
