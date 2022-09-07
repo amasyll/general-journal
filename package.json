@@ -1,0 +1,27 @@
+{
+  "name": "journal",
+  "version": "1.0.0",
+  "description": "This module allows us to make the accounting registration of the acties of commercial company",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amasyll/journal.git"
+  },
+  "keywords": [
+    "journal",
+    "accounting",
+    "sales",
+    "purchase"
+  ],
+  "author": "Amadou Sylla",
+  "license": "MIT",
+  "dependencies": {
+    "vat-rate-calculator": "^1.0.1"
+  }
+}
